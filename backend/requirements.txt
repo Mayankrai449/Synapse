@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+pydantic
+openai  # For GPT-4.1 structured responses
+numpy
+python-dotenv
+requests  # For testing script
+httpx  # For async image downloading
+chromadb  # Vector database
+transformers  # For SigLIP model
+sentencepiece  # Required by SigLIP tokenizer
+protobuf  # Required by sentencepiece
+torch  # PyTorch for SigLIP (install CUDA version separately)
+pillow  # Image processing
+sentence-transformers  # Helpful for text preprocessing
+python-multipart  # For multipart form data handling
+rank-bm25  # For BM25 keyword search and reranking

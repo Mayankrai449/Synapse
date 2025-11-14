@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Synapse",
+  "version": "2.1",
+  "description": "Capture full webpages with AI-powered search and source attribution",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "mind.png",
+      "48": "mind.png",
+      "128": "mind.png"
+    }
+  },
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "http://localhost:8000/*",
+    "<all_urls>"
+  ],
+  "icons": {
+    "16": "mind.png",
+    "48": "mind.png",
+    "128": "mind.png"
+  },
+  "omnibox": {
+    "keyword": "synapse"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
